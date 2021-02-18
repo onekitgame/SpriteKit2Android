@@ -1,4 +1,4 @@
-package cn.onekit.game;
+package ios.uikit;
 
 public interface  UIInterfaceOrientation {
     int Unknown = UIDeviceOrientation.Unknown;

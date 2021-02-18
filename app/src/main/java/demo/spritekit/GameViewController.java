@@ -1,8 +1,12 @@
 package demo.spritekit;
-import cn.onekit.game.*;
-import cn.onekit.game.spritekit.*;
+import ios.iOSFile;
+import ios.spritekit.*;
+import ios.uikit.UIDevice;
+import ios.uikit.UIInterfaceOrientationMask;
+import ios.uikit.UIUserInterfaceIdiom;
+import ios.uikit.UIViewController;
 
-public class GameViewController extends UIViewController {
+public class GameViewController extends UIViewController implements iOSFile {
     public void viewDidLoad() {
         super.viewDidLoad();
 

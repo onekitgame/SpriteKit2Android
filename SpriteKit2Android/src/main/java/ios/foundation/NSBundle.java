@@ -1,16 +1,16 @@
-package cn.onekit.game;
+package ios.foundation;
 
 import android.content.Context;
 
 import java.io.IOException;
 import java.io.InputStream;
 
-import cn.onekit.game.spritekit.SKScene;
+import ios.spritekit.SKScene;
 
-public class Bundle {
+public class NSBundle {
     private final Context _context;
 
-    public Bundle(Context context) {
+    public NSBundle(Context context) {
         this._context = context;
     }
 

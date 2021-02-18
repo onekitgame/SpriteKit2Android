@@ -1,4 +1,4 @@
-package cn.onekit.game.spritekit;
+package ios.spritekit;
 
 public enum SKSceneScaleMode {
     Fill,           /* Scale the SKScene to fill the entire SKView. */

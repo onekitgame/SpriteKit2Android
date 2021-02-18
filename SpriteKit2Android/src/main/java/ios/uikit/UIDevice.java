@@ -1,4 +1,4 @@
-package cn.onekit.game;
+package ios.uikit;
 
 public class UIDevice {
     public static UIDevice getCurrentDevice() {

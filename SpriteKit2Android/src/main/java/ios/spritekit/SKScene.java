@@ -1,4 +1,4 @@
-package cn.onekit.game.spritekit;
+package ios.spritekit;
 
 public class SKScene extends SKNode{
 

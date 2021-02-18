@@ -1,4 +1,4 @@
-package demo.spritelit;
+package demo.spritekit;
 import cn.onekit.game.*;
 import cn.onekit.game.spritekit.*;
 
@@ -7,7 +7,7 @@ public class GameViewController extends UIViewController {
         super.viewDidLoad();
 
         // Load the SKScene from 'GameScene.sks'
-        GameScene scene = GameScene.nodeWithFileNamed("GameScene");
+        GameScene scene = SKScene.nodeWithFileNamed("GameScene");
 
         // Set the scale mode to scale to fit the window
         scene.setScaleMode(SKSceneScaleMode.AspectFill);

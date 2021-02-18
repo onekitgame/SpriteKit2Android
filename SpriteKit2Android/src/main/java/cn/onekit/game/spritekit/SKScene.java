@@ -1,22 +1,17 @@
 package cn.onekit.game.spritekit;
 
-import android.util.Log;
+public class SKScene extends SKNode{
 
-public class SKScene<T> extends SKNode{
+    public static<T extends SKScene> T nodeWithFileNamed(String fileName) {
 
-    public static<T> T nodeWithFileNamed(String gameScene) {
-
-        StackTraceElement[] elements = (new Throwable()).getStackTrace();
-        for (StackTraceElement ele : elements) {
-            try {
-                if (Class.forName(ele.getClassName()).getSuperclass() == SKScene.class) {
-                    Log.e("===========",ele.getClassName() + "调用了method方法");
-                }
-            } catch (ClassNotFoundException e) {
-                e.printStackTrace();
-            }
+        try {
+            StackTraceElement[] elements = (new Throwable()).getStackTrace();
+            Class clazz = Class.forName(elements[1].getClassName());
+            return (T) Class.forName(String.format("%s.%s",clazz.getPackage().getName(),fileName)).newInstance();
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
         }
-        return null;
     }
     private SKSceneScaleMode scaleMode;
 

@@ -1,0 +1,2 @@
+include ':app', ':SpriteKit2Android'
+rootProject.name='SpriteKitDemo'

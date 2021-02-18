@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Pulse",
+    "actions": [
+      [
+        {
+          "type": "scale",
+          "startTime": 0,
+          "duration": 0.3,
+          "timingFunction": "easeIn",
+          "scaleAmount": 0.6
+        },
+        {
+          "type": "scaleTo",
+          "startTime": 0.3,
+          "duration": 0.3,
+          "timingFunction": "easeOut",
+          "scaleAmount": 1
+        }
+      ],
+      [
+        {
+          "type": "fadeOut",
+          "startTime": 0,
+          "duration": 0.3,
+          "timingFunction": "linear"
+        },
+        {
+          "type": "fadeIn",
+          "startTime": 0.3,
+          "duration": 0.3,
+          "timingFunction": "linear"
+        }
+      ]
+    ]
+  }
+]

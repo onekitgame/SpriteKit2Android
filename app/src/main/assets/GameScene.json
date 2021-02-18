@@ -1,0 +1,20 @@
+{
+  "children": [
+    {
+      "type": "label",
+      "name": "helloLabel",
+      "position": {
+        "w": 0,
+        "y": 0,
+        "z": 0,
+        "rotation": 0
+      },
+      "text": "Hello, World!",
+      "horizontal": "center",
+      "vertical": "center",
+      "lines": 1,
+      "lineWidth": 0,
+      "alpha": 1
+    }
+  ]
+}
